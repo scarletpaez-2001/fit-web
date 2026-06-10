@@ -1,0 +1,52 @@
+/* ==========================================
+   ESTILOS GENERALES Y CONFIGURACIÓN
+   ========================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* ==========================================
+   SECCIÓN PRINCIPAL (HERO)
+   ========================================== */
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                      url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+}
+
+/* ==========================================
+   BOTONES PREMIUM
+   ========================================== */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+    border-color: #a52834;
+    transform: scale(1.05); /* El botón se agranda un poquito al pasar el mouse */
+}
+
+/* ==========================================
+   TARJETAS DE PLANES (CARDS)
+   ========================================== */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* La tarjeta sube ligeramente al pasar el cursor */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important; /* Añade una sombra suave */
+}
+
+/* Ajustes especiales para que la tarjeta destacada tenga un borde más firme */
+.border-danger {
+    border-width: 2px !important;
+}
