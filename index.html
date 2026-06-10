@@ -99,7 +99,164 @@
   </div>
   <button type="submit" class="btn btn-danger w-100 fw-bold text-uppercase py-2">Enviar Solicitud</button>
 </form>
+<!usr/bin/env html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerFit Studio - Tu Mejor Versión</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Estilos adicionales para un look premium deportivo */
+    .btn-danger {
+      background-color: #dc3545;
+      border-color: #dc3545;
+      transition: all 0.3s ease;
+    }
+    .btn-danger:hover {
+      background-color: #b02a37;
+      border-color: #a52834;
+      transform: scale(1.05);
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+    }
+  </style>
+</head>
+<body>
 
+  <!-- ==========================================
+       1. BARRA DE NAVEGACIÓN (NAVBAR)
+       ========================================== -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-danger text-uppercase" href="#">PowerFit</a>
+      <button class="navbar-brand navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#planes">Planes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+        <span class="navbar-text text-white-50 d-none d-lg-inline">
+          ¡Primer día gratis!
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       2. SECCIÓN PRINCIPAL / HERO - POWERFIT STUDIO
+       ========================================== -->
+  <header class="bg-dark text-white text-center py-5" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1200'); background-size: cover; background-position: center; min-height: 65vh; display: flex; align-items: center;">
+    <div class="container py-5">
+      <h1 class="display-3 fw-bold text-danger text-uppercase">PowerFit Studio</h1>
+      <p class="lead mb-4 fs-4">Transforma tu fuerza, desafía tus límites y alcanza tu mejor versión hoy mismo.</p>
+      <a href="#planes" class="btn btn-danger btn-lg px-5 py-3 fw-bold text-uppercase">Ver Planes de Ejercicios</a>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       3. SECCIÓN DE PLANES DE EJERCICIOS
+       ========================================== -->
+  <section id="planes" class="py-5 bg-light text-dark">
+    <div class="container py-4">
+      <h2 class="text-center fw-bold text-uppercase mb-5">Nuestros Planes de Entrenamiento</h2>
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Plan 1: Principiante -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body p-4 text-center">
+              <h3 class="card-title fw-bold text-uppercase text-secondary fs-4">Plan Inicial</h3>
+              <p class="card-text text-muted my-3">Ideal para quienes están comenzando su camino fitness con rutinas guiadas de 3 días a la semana.</p>
+              <h4 class="fw-bold text-danger mb-4">$19.990 <span class="fs-6 text-muted">/ mes</span></h4>
+              <a href="#contacto" class="btn btn-outline-danger w-100 fw-bold text-uppercase">Me Quiero Unir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan 2: Intermedio / Recomendado -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow border-2 border-danger position-relative">
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger text-uppercase px-3 py-2">Más Popular</span>
+            <div class="card-body p-4 text-center">
+              <h3 class="card-title fw-bold text-uppercase text-danger fs-4 mt-2">Plan Power</h3>
+              <p class="card-text text-muted my-3">Acceso total a sala de musculación, clases dirigidas y asesoría nutricional básica mensual.</p>
+              <h4 class="fw-bold text-danger mb-4">$29.990 <span class="fs-6 text-muted">/ mes</span></h4>
+              <a href="#contacto" class="btn btn-danger w-100 fw-bold text-uppercase">Me Quiero Unir</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan 3: Avanzado -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body p-4 text-center">
+              <h3 class="card-title fw-bold text-uppercase text-secondary fs-4">Plan Pro Athlete</h3>
+              <p class="card-text text-muted my-3">Entrenamiento de alto rendimiento, coach personalizado, nutrición a medida y seguimiento semanal.</p>
+              <h4 class="fw-bold text-danger mb-4">$49.990 <span class="fs-6 text-muted">/ mes</span></h4>
+              <a href="#contacto" class="btn btn-outline-danger w-100 fw-bold text-uppercase">Me Quiero Unir</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. SECCIÓN DE CONTACTO
+       ========================================== -->
+  <section id="contacto" class="py-5 bg-dark text-white">
+    <div class="container py-4" style="max-width: 600px;">
+      <h2 class="text-center fw-bold text-uppercase mb-4">Comienza tu Cambio</h2>
+      <p class="text-center text-muted mb-4">Déjanos tus datos y un entrenador te contactará para agendar tu primera clase gratis.</p>
+      
+      <form class="bg-secondary bg-opacity-10 p-4 rounded shadow">
+        <div class="mb-3">
+          <label for="nombre" class="form-label text-uppercase fs-6">Nombre Completo</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ej: Scarlet Páez" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label text-uppercase fs-6">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Ej: scarlet@correo.cl" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label text-uppercase fs-6">¿Cuáles son tus objetivos?</label>
+          <textarea class="form-control" id="mensaje" rows="3" placeholder="Ej: Bajar de peso, ganar fuerza..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger w-100 fw-bold text-uppercase py-2">Enviar Solicitud</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. FOOTER
+       ========================================== -->
+  <footer class="bg-black text-center text-muted py-3">
+    <small>© 2026 PowerFit Studio - Todos los derechos reservados.</small>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
